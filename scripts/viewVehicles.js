@@ -7,11 +7,6 @@ const showallVehiclesButton = document.querySelector(
 const FETCH_VEHICLES = "http://localhost:5000/vehicles";
 const FETCH_MODELS = "http://localhost:5000/models";
 
-// fetch(FETCH_MODELS)
-//   .then((response) => response.json())
-//   .then((modelsData) => console.log(modelsData))
-//   .catch((error) => console.log(error));
-
 // FUNCTIONS
 const showAllVehicles = async (e) => {
   const response = fetch(FETCH_VEHICLES)

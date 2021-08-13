@@ -5,6 +5,10 @@ const showAllModelsWithCountButton = document.querySelector(
 );
 
 const displayingAllModels = document.querySelector("#model-box");
+const displayingAllModelsWithCount = document.querySelector(
+  "#model-box-with-count"
+);
+
 const FETCH_MODELS = "http://localhost:5000/models";
 const FETCH_MODELS_WITH_COUNT = "http://localhost:5000/modelscount";
 
@@ -13,7 +17,7 @@ const displayCarModels = (e) => {
   return fetch(FETCH_MODELS)
     .then((response) => response.json())
     .then((data) => {
-      // console.log(data);
+      console.log(data);
       data.reduce((item, total) => {
         displayingAllModels.innerHTML += `
         <div class="model-card">
@@ -32,6 +36,17 @@ const displayCarModelsCount = (e) => {
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
+
+      data.reduce((item, total) => {
+        displayingAllModelsWithCount.innerHTML += `
+        <div class="model-card">
+           <p><strong>Model:</strong> ${item.model}</p>
+           <p><strong>Price:</strong> ${item.price}</p>
+           <p><strong>Count:</strong> ${item.count}</p>
+        </div>
+        `;
+        return total;
+      }, "");
     })
     .catch((error) => console.log(error));
 };
