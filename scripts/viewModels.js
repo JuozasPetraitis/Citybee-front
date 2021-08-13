@@ -9,8 +9,8 @@ const displayingAllModelsWithCount = document.querySelector(
   "#model-box-with-count"
 );
 
-const FETCH_MODELS = "http://localhost:5000/models";
-const FETCH_MODELS_WITH_COUNT = "http://localhost:5000/modelscount";
+const FETCH_MODELS = "https://whatafa.herokuapp.com/models";
+const FETCH_MODELS_WITH_COUNT = "https://whatafa.herokuapp.com/modelscount";
 
 // FUNCTIONS
 const displayCarModels = (e) => {

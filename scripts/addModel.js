@@ -1,6 +1,6 @@
 // VARIABLES
 const submitButton = document.querySelector(".button.is-link");
-const FETCH = "http://localhost:5000/models";
+const FETCH = "https://whatafa.herokuapp.com/models";
 // FUNCTIONS
 const submitData = async (e) => {
   const modelValue = document.querySelector("#carModel").value;

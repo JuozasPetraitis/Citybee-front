@@ -3,8 +3,8 @@ const submitButton = document.querySelector(".button.is-link");
 const selectCarModelElement = document.querySelector("#select-car-model");
 const selectOptionCarModelElement = document.querySelector(".modelName");
 
-const FETCH_VEHICLES = "http://localhost:5000/vehicles";
-const FETCH_MODELS = "http://localhost:5000/models";
+const FETCH_VEHICLES = "https://whatafa.herokuapp.com/vehicles";
+const FETCH_MODELS = "https://whatafa.herokuapp.com/models";
 
 // FUNCTIONS
 const updateSelect = async () => {
