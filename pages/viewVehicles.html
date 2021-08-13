@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>View Vehicles</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <!-- CUSTOM JS -->
+    <script defer src="../scripts/viewVehicles.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav
+        class="navbar is-black"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="./viewModels.html" class="navbar-item"> View Models </a>
+            <a href="./addModel.html" class="navbar-item"> Add Model </a>
+            <a href="./viewVehicles.html" class="navbar-item">
+              View Vehicles
+            </a>
+            <a href="./addVehicle.html" class="navbar-item"> Add Vehicle </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <button id="show-all-vehicles-button" class="button">
+        Show all vehicles
+      </button>
+      <button id="show-all-vehicles-button" class="button">
+        Show LT vehicles
+      </button>
+      <button id="show-all-vehicles-button" class="button">
+        Show LV vehicles
+      </button>
+      <button id="show-all-vehicles-button" class="button">
+        Show EE vehicles
+      </button>
+      <div id="all-vehicles-box"></div>
+    </main>
+  </body>
+</html>

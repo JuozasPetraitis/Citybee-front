@@ -1,0 +1,34 @@
+#model-box {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 20px 20px;
+}
+
+.button-display {
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-around;
+
+  padding: 10px 0;
+
+  background-color: black;
+}
+
+.model-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 200px;
+  height: 100px;
+
+  margin: 20px 20px;
+
+  color: black;
+  border-radius: 2px;
+  background-color: rgba(220, 220, 220, 0.227);
+  border: 1px solid black;
+}
